@@ -11,9 +11,18 @@ import KakaoSDKCommon
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
     let kakaoApiKey = Bundle.main.infoDictionary?["KakaoAppKey"] as! String
+    private let rootDIContainer = RootDIContainer()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        let rootViewController = rootDIContainer.createRootViewController()
+        let window = UIWindow()
+        window.rootViewController = rootViewController
+        window.makeKeyAndVisible()
+        self.window = window
+
         KakaoSDK.initSDK(appKey: kakaoApiKey)
         return true
     }

@@ -21,6 +21,28 @@
 		876DDA242B57BF8200CA3D9B /* RxKakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA232B57BF8200CA3D9B /* RxKakaoSDKUser */; };
 		876DDA272B57C00800CA3D9B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA262B57C00800CA3D9B /* Moya */; };
 		876DDA292B57C00800CA3D9B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA282B57C00800CA3D9B /* RxMoya */; };
+		876DDA302B57DA2800CA3D9B /* RootDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA2F2B57DA2800CA3D9B /* RootDIContainer.swift */; };
+		876DDA332B57DA7500CA3D9B /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */; };
+		876DDA352B57DAB200CA3D9B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA342B57DAB200CA3D9B /* RootViewModel.swift */; };
+		876DDA372B57DB5C00CA3D9B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA362B57DB5C00CA3D9B /* Keychain.swift */; };
+		876DDA392B57DB6F00CA3D9B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA382B57DB6F00CA3D9B /* NetworkService.swift */; };
+		876DDA3B2B57DBFC00CA3D9B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA3A2B57DBFC00CA3D9B /* RootViewController.swift */; };
+		876DDA3D2B57DC4B00CA3D9B /* SplashDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA3C2B57DC4B00CA3D9B /* SplashDIContainer.swift */; };
+		876DDA3F2B57DC5D00CA3D9B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA3E2B57DC5D00CA3D9B /* SplashViewController.swift */; };
+		876DDA412B57DC6700CA3D9B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA402B57DC6700CA3D9B /* SplashViewModel.swift */; };
+		876DDA432B57DC8A00CA3D9B /* LoginDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA422B57DC8A00CA3D9B /* LoginDIContainer.swift */; };
+		876DDA452B57DC9200CA3D9B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA442B57DC9200CA3D9B /* LoginViewController.swift */; };
+		876DDA472B57DC9900CA3D9B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA462B57DC9900CA3D9B /* LoginViewModel.swift */; };
+		876DDA492B57DCA500CA3D9B /* HomeDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA482B57DCA500CA3D9B /* HomeDIContainer.swift */; };
+		876DDA4B2B57DCB100CA3D9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA4A2B57DCB100CA3D9B /* HomeViewController.swift */; };
+		876DDA4D2B57DCBA00CA3D9B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA4C2B57DCBA00CA3D9B /* HomeViewModel.swift */; };
+		876DDA4F2B57DD5D00CA3D9B /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA4E2B57DD5D00CA3D9B /* Secret.swift */; };
+		876DDA532B57DF8A00CA3D9B /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */; };
+		876DDA572B57E37B00CA3D9B /* RxAppState in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA562B57E37B00CA3D9B /* RxAppState */; };
+		876DDA592B57E47300CA3D9B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA582B57E47300CA3D9B /* Navigation.swift */; };
+		876DDA5B2B57E64D00CA3D9B /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA5A2B57E64D00CA3D9B /* Destination.swift */; };
+		876DDA5D2B57E8ED00CA3D9B /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */; };
+		876DDA602B57ED0400CA3D9B /* OAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +77,27 @@
 		876DDA0E2B57B6EF00CA3D9B /* KakaoLoginPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginPracticeUITests.swift; sourceTree = "<group>"; };
 		876DDA102B57B6EF00CA3D9B /* KakaoLoginPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		876DDA2A2B57C0D500CA3D9B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		876DDA2F2B57DA2800CA3D9B /* RootDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDIContainer.swift; sourceTree = "<group>"; };
+		876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		876DDA342B57DAB200CA3D9B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		876DDA362B57DB5C00CA3D9B /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		876DDA382B57DB6F00CA3D9B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		876DDA3A2B57DBFC00CA3D9B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		876DDA3C2B57DC4B00CA3D9B /* SplashDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDIContainer.swift; sourceTree = "<group>"; };
+		876DDA3E2B57DC5D00CA3D9B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		876DDA402B57DC6700CA3D9B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		876DDA422B57DC8A00CA3D9B /* LoginDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDIContainer.swift; sourceTree = "<group>"; };
+		876DDA442B57DC9200CA3D9B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		876DDA462B57DC9900CA3D9B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		876DDA482B57DCA500CA3D9B /* HomeDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainer.swift; sourceTree = "<group>"; };
+		876DDA4A2B57DCB100CA3D9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		876DDA4C2B57DCBA00CA3D9B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		876DDA4E2B57DD5D00CA3D9B /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDelegate.swift; sourceTree = "<group>"; };
+		876DDA582B57E47300CA3D9B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		876DDA5A2B57E64D00CA3D9B /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +107,7 @@
 			files = (
 				876DDA292B57C00800CA3D9B /* RxMoya in Frameworks */,
 				876DDA242B57BF8200CA3D9B /* RxKakaoSDKUser in Frameworks */,
+				876DDA572B57E37B00CA3D9B /* RxAppState in Frameworks */,
 				876DDA202B57BF8200CA3D9B /* RxKakaoSDK in Frameworks */,
 				876DDA272B57C00800CA3D9B /* Moya in Frameworks */,
 				876DDA222B57BF8200CA3D9B /* RxKakaoSDKAuth in Frameworks */,
@@ -110,14 +154,25 @@
 		876DD9EC2B57B6ED00CA3D9B /* KakaoLoginPractice */ = {
 			isa = PBXGroup;
 			children = (
+				876DDA312B57DA6600CA3D9B /* Auth */,
+				876DDA2E2B57DA0B00CA3D9B /* Home */,
+				876DDA2D2B57D9F400CA3D9B /* Login */,
+				876DDA2C2B57D9EC00CA3D9B /* Splash */,
 				876DD9ED2B57B6ED00CA3D9B /* AppDelegate.swift */,
 				876DD9EF2B57B6ED00CA3D9B /* SceneDelegate.swift */,
 				876DD9F12B57B6ED00CA3D9B /* ViewController.swift */,
+				876DDA2B2B57D9E000CA3D9B /* Root */,
 				876DD9F32B57B6ED00CA3D9B /* Main.storyboard */,
 				876DD9F62B57B6EF00CA3D9B /* Assets.xcassets */,
 				876DD9F82B57B6EF00CA3D9B /* LaunchScreen.storyboard */,
 				876DD9FB2B57B6EF00CA3D9B /* Info.plist */,
 				876DDA2A2B57C0D500CA3D9B /* Secrets.xcconfig */,
+				876DDA4E2B57DD5D00CA3D9B /* Secret.swift */,
+				876DDA362B57DB5C00CA3D9B /* Keychain.swift */,
+				876DDA382B57DB6F00CA3D9B /* NetworkService.swift */,
+				876DDA582B57E47300CA3D9B /* Navigation.swift */,
+				876DDA5A2B57E64D00CA3D9B /* Destination.swift */,
+				876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */,
 			);
 			path = KakaoLoginPractice;
 			sourceTree = "<group>";
@@ -137,6 +192,56 @@
 				876DDA102B57B6EF00CA3D9B /* KakaoLoginPracticeUITestsLaunchTests.swift */,
 			);
 			path = KakaoLoginPracticeUITests;
+			sourceTree = "<group>";
+		};
+		876DDA2B2B57D9E000CA3D9B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA2F2B57DA2800CA3D9B /* RootDIContainer.swift */,
+				876DDA342B57DAB200CA3D9B /* RootViewModel.swift */,
+				876DDA3A2B57DBFC00CA3D9B /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		876DDA2C2B57D9EC00CA3D9B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA3C2B57DC4B00CA3D9B /* SplashDIContainer.swift */,
+				876DDA3E2B57DC5D00CA3D9B /* SplashViewController.swift */,
+				876DDA402B57DC6700CA3D9B /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		876DDA2D2B57D9F400CA3D9B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA422B57DC8A00CA3D9B /* LoginDIContainer.swift */,
+				876DDA442B57DC9200CA3D9B /* LoginViewController.swift */,
+				876DDA462B57DC9900CA3D9B /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		876DDA2E2B57DA0B00CA3D9B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA482B57DCA500CA3D9B /* HomeDIContainer.swift */,
+				876DDA4C2B57DCBA00CA3D9B /* HomeViewModel.swift */,
+				876DDA4A2B57DCB100CA3D9B /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		876DDA312B57DA6600CA3D9B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */,
+				876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */,
+				876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +266,7 @@
 				876DDA232B57BF8200CA3D9B /* RxKakaoSDKUser */,
 				876DDA262B57C00800CA3D9B /* Moya */,
 				876DDA282B57C00800CA3D9B /* RxMoya */,
+				876DDA562B57E37B00CA3D9B /* RxAppState */,
 			);
 			productName = KakaoLoginPractice;
 			productReference = 876DD9EA2B57B6ED00CA3D9B /* KakaoLoginPractice.app */;
@@ -238,6 +344,7 @@
 				876DDA1D2B57BF0000CA3D9B /* XCRemoteSwiftPackageReference "RxSwift" */,
 				876DDA1E2B57BF8200CA3D9B /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */,
 				876DDA252B57C00800CA3D9B /* XCRemoteSwiftPackageReference "Moya" */,
+				876DDA552B57E37B00CA3D9B /* XCRemoteSwiftPackageReference "RxAppState" */,
 			);
 			productRefGroup = 876DD9EB2B57B6ED00CA3D9B /* Products */;
 			projectDirPath = "";
@@ -282,9 +389,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876DDA452B57DC9200CA3D9B /* LoginViewController.swift in Sources */,
+				876DDA4D2B57DCBA00CA3D9B /* HomeViewModel.swift in Sources */,
+				876DDA5D2B57E8ED00CA3D9B /* UIViewController+.swift in Sources */,
+				876DDA432B57DC8A00CA3D9B /* LoginDIContainer.swift in Sources */,
+				876DDA592B57E47300CA3D9B /* Navigation.swift in Sources */,
+				876DDA302B57DA2800CA3D9B /* RootDIContainer.swift in Sources */,
+				876DDA4B2B57DCB100CA3D9B /* HomeViewController.swift in Sources */,
 				876DD9F22B57B6ED00CA3D9B /* ViewController.swift in Sources */,
+				876DDA3B2B57DBFC00CA3D9B /* RootViewController.swift in Sources */,
+				876DDA412B57DC6700CA3D9B /* SplashViewModel.swift in Sources */,
+				876DDA602B57ED0400CA3D9B /* OAuthRepository.swift in Sources */,
+				876DDA392B57DB6F00CA3D9B /* NetworkService.swift in Sources */,
+				876DDA5B2B57E64D00CA3D9B /* Destination.swift in Sources */,
+				876DDA4F2B57DD5D00CA3D9B /* Secret.swift in Sources */,
+				876DDA532B57DF8A00CA3D9B /* AuthenticationDelegate.swift in Sources */,
+				876DDA3D2B57DC4B00CA3D9B /* SplashDIContainer.swift in Sources */,
+				876DDA472B57DC9900CA3D9B /* LoginViewModel.swift in Sources */,
+				876DDA492B57DCA500CA3D9B /* HomeDIContainer.swift in Sources */,
 				876DD9EE2B57B6ED00CA3D9B /* AppDelegate.swift in Sources */,
+				876DDA332B57DA7500CA3D9B /* AuthenticationRepository.swift in Sources */,
+				876DDA352B57DAB200CA3D9B /* RootViewModel.swift in Sources */,
 				876DD9F02B57B6ED00CA3D9B /* SceneDelegate.swift in Sources */,
+				876DDA372B57DB5C00CA3D9B /* Keychain.swift in Sources */,
+				876DDA3F2B57DC5D00CA3D9B /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +783,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		876DDA552B57E37B00CA3D9B /* XCRemoteSwiftPackageReference "RxAppState" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pixeldock/RxAppState.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -682,6 +818,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 876DDA252B57C00800CA3D9B /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		876DDA562B57E37B00CA3D9B /* RxAppState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 876DDA552B57E37B00CA3D9B /* XCRemoteSwiftPackageReference "RxAppState" */;
+			productName = RxAppState;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
