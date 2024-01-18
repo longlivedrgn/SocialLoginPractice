@@ -25,7 +25,6 @@
 		876DDA332B57DA7500CA3D9B /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */; };
 		876DDA352B57DAB200CA3D9B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA342B57DAB200CA3D9B /* RootViewModel.swift */; };
 		876DDA372B57DB5C00CA3D9B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA362B57DB5C00CA3D9B /* Keychain.swift */; };
-		876DDA392B57DB6F00CA3D9B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA382B57DB6F00CA3D9B /* NetworkService.swift */; };
 		876DDA3B2B57DBFC00CA3D9B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA3A2B57DBFC00CA3D9B /* RootViewController.swift */; };
 		876DDA3D2B57DC4B00CA3D9B /* SplashDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA3C2B57DC4B00CA3D9B /* SplashDIContainer.swift */; };
 		876DDA3F2B57DC5D00CA3D9B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA3E2B57DC5D00CA3D9B /* SplashViewController.swift */; };
@@ -36,13 +35,21 @@
 		876DDA492B57DCA500CA3D9B /* HomeDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA482B57DCA500CA3D9B /* HomeDIContainer.swift */; };
 		876DDA4B2B57DCB100CA3D9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA4A2B57DCB100CA3D9B /* HomeViewController.swift */; };
 		876DDA4D2B57DCBA00CA3D9B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA4C2B57DCBA00CA3D9B /* HomeViewModel.swift */; };
-		876DDA4F2B57DD5D00CA3D9B /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA4E2B57DD5D00CA3D9B /* Secret.swift */; };
+		876DDA4F2B57DD5D00CA3D9B /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA4E2B57DD5D00CA3D9B /* Token.swift */; };
 		876DDA532B57DF8A00CA3D9B /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */; };
 		876DDA572B57E37B00CA3D9B /* RxAppState in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA562B57E37B00CA3D9B /* RxAppState */; };
 		876DDA592B57E47300CA3D9B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA582B57E47300CA3D9B /* Navigation.swift */; };
 		876DDA5B2B57E64D00CA3D9B /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA5A2B57E64D00CA3D9B /* Destination.swift */; };
 		876DDA5D2B57E8ED00CA3D9B /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */; };
 		876DDA602B57ED0400CA3D9B /* OAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */; };
+		876DDA632B58053C00CA3D9B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA622B58053C00CA3D9B /* LoginRouter.swift */; };
+		876DDA652B58054D00CA3D9B /* ServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA642B58054D00CA3D9B /* ServiceRouter.swift */; };
+		876DDA6C2B581E8E00CA3D9B /* LoginRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA6B2B581E8E00CA3D9B /* LoginRequestDTO.swift */; };
+		876DDA6F2B581F2C00CA3D9B /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA6E2B581F2C00CA3D9B /* LoginResponseDTO.swift */; };
+		876DDA722B58235600CA3D9B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA712B58235600CA3D9B /* NetworkService.swift */; };
+		876DDA742B5823F200CA3D9B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA732B5823F200CA3D9B /* NetworkError.swift */; };
+		876DDA782B583CA800CA3D9B /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA772B583CA800CA3D9B /* ServerResponse.swift */; };
+		876DDA7A2B584AC000CA3D9B /* RefreshAuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA792B584AC000CA3D9B /* RefreshAuthenticationRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +88,6 @@
 		876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		876DDA342B57DAB200CA3D9B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		876DDA362B57DB5C00CA3D9B /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
-		876DDA382B57DB6F00CA3D9B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		876DDA3A2B57DBFC00CA3D9B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		876DDA3C2B57DC4B00CA3D9B /* SplashDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashDIContainer.swift; sourceTree = "<group>"; };
 		876DDA3E2B57DC5D00CA3D9B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -92,12 +98,20 @@
 		876DDA482B57DCA500CA3D9B /* HomeDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainer.swift; sourceTree = "<group>"; };
 		876DDA4A2B57DCB100CA3D9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		876DDA4C2B57DCBA00CA3D9B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		876DDA4E2B57DD5D00CA3D9B /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		876DDA4E2B57DD5D00CA3D9B /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDelegate.swift; sourceTree = "<group>"; };
 		876DDA582B57E47300CA3D9B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		876DDA5A2B57E64D00CA3D9B /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthRepository.swift; sourceTree = "<group>"; };
+		876DDA622B58053C00CA3D9B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		876DDA642B58054D00CA3D9B /* ServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRouter.swift; sourceTree = "<group>"; };
+		876DDA6B2B581E8E00CA3D9B /* LoginRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestDTO.swift; sourceTree = "<group>"; };
+		876DDA6E2B581F2C00CA3D9B /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
+		876DDA712B58235600CA3D9B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		876DDA732B5823F200CA3D9B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		876DDA772B583CA800CA3D9B /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		876DDA792B584AC000CA3D9B /* RefreshAuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshAuthenticationRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +168,7 @@
 		876DD9EC2B57B6ED00CA3D9B /* KakaoLoginPractice */ = {
 			isa = PBXGroup;
 			children = (
+				876DDA662B581E0B00CA3D9B /* Network */,
 				876DDA312B57DA6600CA3D9B /* Auth */,
 				876DDA2E2B57DA0B00CA3D9B /* Home */,
 				876DDA2D2B57D9F400CA3D9B /* Login */,
@@ -167,9 +182,7 @@
 				876DD9F82B57B6EF00CA3D9B /* LaunchScreen.storyboard */,
 				876DD9FB2B57B6EF00CA3D9B /* Info.plist */,
 				876DDA2A2B57C0D500CA3D9B /* Secrets.xcconfig */,
-				876DDA4E2B57DD5D00CA3D9B /* Secret.swift */,
 				876DDA362B57DB5C00CA3D9B /* Keychain.swift */,
-				876DDA382B57DB6F00CA3D9B /* NetworkService.swift */,
 				876DDA582B57E47300CA3D9B /* Navigation.swift */,
 				876DDA5A2B57E64D00CA3D9B /* Destination.swift */,
 				876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */,
@@ -237,11 +250,75 @@
 		876DDA312B57DA6600CA3D9B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				876DDA4E2B57DD5D00CA3D9B /* Token.swift */,
 				876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */,
 				876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */,
 				876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		876DDA612B58053200CA3D9B /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA702B58221600CA3D9B /* Protocol */,
+				876DDA622B58053C00CA3D9B /* LoginRouter.swift */,
+				876DDA792B584AC000CA3D9B /* RefreshAuthenticationRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		876DDA662B581E0B00CA3D9B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA672B581E2600CA3D9B /* DTO */,
+				876DDA612B58053200CA3D9B /* Routers */,
+				876DDA712B58235600CA3D9B /* NetworkService.swift */,
+				876DDA732B5823F200CA3D9B /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		876DDA672B581E2600CA3D9B /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA682B581E2F00CA3D9B /* Auth */,
+				876DDA772B583CA800CA3D9B /* ServerResponse.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		876DDA682B581E2F00CA3D9B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA692B581E7300CA3D9B /* Request */,
+				876DDA6A2B581E7900CA3D9B /* Response */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		876DDA692B581E7300CA3D9B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA6B2B581E8E00CA3D9B /* LoginRequestDTO.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		876DDA6A2B581E7900CA3D9B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA6E2B581F2C00CA3D9B /* LoginResponseDTO.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		876DDA702B58221600CA3D9B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA642B58054D00CA3D9B /* ServiceRouter.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				876DDA452B57DC9200CA3D9B /* LoginViewController.swift in Sources */,
+				876DDA742B5823F200CA3D9B /* NetworkError.swift in Sources */,
 				876DDA4D2B57DCBA00CA3D9B /* HomeViewModel.swift in Sources */,
 				876DDA5D2B57E8ED00CA3D9B /* UIViewController+.swift in Sources */,
 				876DDA432B57DC8A00CA3D9B /* LoginDIContainer.swift in Sources */,
@@ -400,17 +478,23 @@
 				876DDA3B2B57DBFC00CA3D9B /* RootViewController.swift in Sources */,
 				876DDA412B57DC6700CA3D9B /* SplashViewModel.swift in Sources */,
 				876DDA602B57ED0400CA3D9B /* OAuthRepository.swift in Sources */,
-				876DDA392B57DB6F00CA3D9B /* NetworkService.swift in Sources */,
 				876DDA5B2B57E64D00CA3D9B /* Destination.swift in Sources */,
-				876DDA4F2B57DD5D00CA3D9B /* Secret.swift in Sources */,
+				876DDA4F2B57DD5D00CA3D9B /* Token.swift in Sources */,
+				876DDA6C2B581E8E00CA3D9B /* LoginRequestDTO.swift in Sources */,
 				876DDA532B57DF8A00CA3D9B /* AuthenticationDelegate.swift in Sources */,
 				876DDA3D2B57DC4B00CA3D9B /* SplashDIContainer.swift in Sources */,
+				876DDA652B58054D00CA3D9B /* ServiceRouter.swift in Sources */,
+				876DDA7A2B584AC000CA3D9B /* RefreshAuthenticationRouter.swift in Sources */,
 				876DDA472B57DC9900CA3D9B /* LoginViewModel.swift in Sources */,
+				876DDA782B583CA800CA3D9B /* ServerResponse.swift in Sources */,
+				876DDA632B58053C00CA3D9B /* LoginRouter.swift in Sources */,
 				876DDA492B57DCA500CA3D9B /* HomeDIContainer.swift in Sources */,
 				876DD9EE2B57B6ED00CA3D9B /* AppDelegate.swift in Sources */,
 				876DDA332B57DA7500CA3D9B /* AuthenticationRepository.swift in Sources */,
 				876DDA352B57DAB200CA3D9B /* RootViewModel.swift in Sources */,
+				876DDA6F2B581F2C00CA3D9B /* LoginResponseDTO.swift in Sources */,
 				876DD9F02B57B6ED00CA3D9B /* SceneDelegate.swift in Sources */,
+				876DDA722B58235600CA3D9B /* NetworkService.swift in Sources */,
 				876DDA372B57DB5C00CA3D9B /* Keychain.swift in Sources */,
 				876DDA3F2B57DC5D00CA3D9B /* SplashViewController.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  Secret.swift
+//  Token.swift
 //  KakaoLoginPractice
 //
 //  Created by Miro on 1/17/24.

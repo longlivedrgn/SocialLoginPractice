@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Moya
 
 class Keychain {
     static let shared = Keychain()
