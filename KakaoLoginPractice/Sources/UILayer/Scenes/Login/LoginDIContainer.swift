@@ -26,7 +26,7 @@ final class LoginDIContainer {
     private func createLoginViewModel() -> LoginViewModel {
 //        let oauthRepository = YourNameOAuthRepository()
         let OAuthRepository = OAuthRepository()
-        return LoginViewModel(delegate: rootViewModel, authenticationRepository: authenticationRepository, oauthRepository: OAuthRepository, keychain: Keychain.shared)
+        return LoginViewModel(delegate: rootViewModel, authenticationRepository: authenticationRepository, OAuthRepository: OAuthRepository)
     }
 
 }

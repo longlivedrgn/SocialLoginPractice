@@ -22,10 +22,16 @@ final class SplashViewModel {
     }
 
     func loadAccessToken() {
-        // Keychain에서 Token 읽어오기!..
+        // TokenStorage에서 Token 읽어오기!..
         // 그리고 Token이 있으면 delegate으로 signedIn
         // 없으면 notSignIn으로
 
+        let token = self.authenticationRepository.fetchToken()
+        guard token.accessToken != nil && token.refreshToken != nil else {
+            self.authenticationDelegate.notSignIn()
+            return
+        }
+        self.authenticationDelegate.signIn(token: token)
     }
 
 }

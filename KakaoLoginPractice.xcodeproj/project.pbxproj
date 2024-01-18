@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		876DD9EE2B57B6ED00CA3D9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DD9ED2B57B6ED00CA3D9B /* AppDelegate.swift */; };
-		876DD9F02B57B6ED00CA3D9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DD9EF2B57B6ED00CA3D9B /* SceneDelegate.swift */; };
-		876DD9F22B57B6ED00CA3D9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DD9F12B57B6ED00CA3D9B /* ViewController.swift */; };
 		876DD9F52B57B6ED00CA3D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876DD9F32B57B6ED00CA3D9B /* Main.storyboard */; };
 		876DD9F72B57B6EF00CA3D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876DD9F62B57B6EF00CA3D9B /* Assets.xcassets */; };
 		876DD9FA2B57B6EF00CA3D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876DD9F82B57B6EF00CA3D9B /* LaunchScreen.storyboard */; };
@@ -53,6 +51,9 @@
 		876DDA7C2B58E76B00CA3D9B /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA7B2B58E76B00CA3D9B /* KakaoAuth.swift */; };
 		876DDA7E2B58E81900CA3D9B /* OAuthReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA7D2B58E81900CA3D9B /* OAuthReponse.swift */; };
 		876DDA812B58ECD000CA3D9B /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA802B58ECD000CA3D9B /* OAuth.swift */; };
+		876DDA832B58F0C100CA3D9B /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA822B58F0C100CA3D9B /* AppleAuth.swift */; };
+		876DDA892B58F8C500CA3D9B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA882B58F8C500CA3D9B /* SnapKit */; };
+		876DDA8B2B58F8C500CA3D9B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA8A2B58F8C500CA3D9B /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +76,6 @@
 /* Begin PBXFileReference section */
 		876DD9EA2B57B6ED00CA3D9B /* KakaoLoginPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoLoginPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		876DD9ED2B57B6ED00CA3D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		876DD9EF2B57B6ED00CA3D9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		876DD9F12B57B6ED00CA3D9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		876DD9F42B57B6ED00CA3D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		876DD9F62B57B6EF00CA3D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		876DD9F92B57B6EF00CA3D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		876DDA7B2B58E76B00CA3D9B /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
 		876DDA7D2B58E81900CA3D9B /* OAuthReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthReponse.swift; sourceTree = "<group>"; };
 		876DDA802B58ECD000CA3D9B /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		876DDA822B58F0C100CA3D9B /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +128,8 @@
 				876DDA292B57C00800CA3D9B /* RxMoya in Frameworks */,
 				876DDA242B57BF8200CA3D9B /* RxKakaoSDKUser in Frameworks */,
 				876DDA572B57E37B00CA3D9B /* RxAppState in Frameworks */,
+				876DDA8B2B58F8C500CA3D9B /* SnapKit-Dynamic in Frameworks */,
+				876DDA892B58F8C500CA3D9B /* SnapKit in Frameworks */,
 				876DDA202B57BF8200CA3D9B /* RxKakaoSDK in Frameworks */,
 				876DDA272B57C00800CA3D9B /* Moya in Frameworks */,
 				876DDA222B57BF8200CA3D9B /* RxKakaoSDKAuth in Frameworks */,
@@ -174,23 +176,13 @@
 		876DD9EC2B57B6ED00CA3D9B /* KakaoLoginPractice */ = {
 			isa = PBXGroup;
 			children = (
-				876DDA662B581E0B00CA3D9B /* Network */,
-				876DDA312B57DA6600CA3D9B /* Auth */,
-				876DDA2E2B57DA0B00CA3D9B /* Home */,
-				876DDA2D2B57D9F400CA3D9B /* Login */,
-				876DDA2C2B57D9EC00CA3D9B /* Splash */,
-				876DD9ED2B57B6ED00CA3D9B /* AppDelegate.swift */,
-				876DD9EF2B57B6ED00CA3D9B /* SceneDelegate.swift */,
-				876DD9F12B57B6ED00CA3D9B /* ViewController.swift */,
-				876DDA2B2B57D9E000CA3D9B /* Root */,
+				876DDA932B590D5B00CA3D9B /* Resources */,
+				876DDA852B58F5AC00CA3D9B /* Sources */,
 				876DD9F32B57B6ED00CA3D9B /* Main.storyboard */,
 				876DD9F62B57B6EF00CA3D9B /* Assets.xcassets */,
 				876DD9F82B57B6EF00CA3D9B /* LaunchScreen.storyboard */,
 				876DD9FB2B57B6EF00CA3D9B /* Info.plist */,
 				876DDA2A2B57C0D500CA3D9B /* Secrets.xcconfig */,
-				876DDA582B57E47300CA3D9B /* Navigation.swift */,
-				876DDA5A2B57E64D00CA3D9B /* Destination.swift */,
-				876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */,
 			);
 			path = KakaoLoginPractice;
 			sourceTree = "<group>";
@@ -263,6 +255,7 @@
 				876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */,
 				876DDA7B2B58E76B00CA3D9B /* KakaoAuth.swift */,
 				876DDA7D2B58E81900CA3D9B /* OAuthReponse.swift */,
+				876DDA822B58F0C100CA3D9B /* AppleAuth.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -338,6 +331,78 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		876DDA842B58F57A00CA3D9B /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA942B590D7100CA3D9B /* Scenes */,
+				876DDA8C2B58FDCE00CA3D9B /* Protocol */,
+				876DDA582B57E47300CA3D9B /* Navigation.swift */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		876DDA852B58F5AC00CA3D9B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA842B58F57A00CA3D9B /* UILayer */,
+				876DDA662B581E0B00CA3D9B /* Network */,
+				876DDA312B57DA6600CA3D9B /* Auth */,
+				876DDA8D2B58FDE700CA3D9B /* Common */,
+				876DDA862B58F5B300CA3D9B /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		876DDA862B58F5B300CA3D9B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				876DD9ED2B57B6ED00CA3D9B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		876DDA8C2B58FDCE00CA3D9B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA5A2B57E64D00CA3D9B /* Destination.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		876DDA8D2B58FDE700CA3D9B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA8E2B58FE0100CA3D9B /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		876DDA8E2B58FE0100CA3D9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA5C2B57E8ED00CA3D9B /* UIViewController+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		876DDA932B590D5B00CA3D9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		876DDA942B590D7100CA3D9B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				876DDA2B2B57D9E000CA3D9B /* Root */,
+				876DDA2E2B57DA0B00CA3D9B /* Home */,
+				876DDA2D2B57D9F400CA3D9B /* Login */,
+				876DDA2C2B57D9EC00CA3D9B /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,6 +426,8 @@
 				876DDA262B57C00800CA3D9B /* Moya */,
 				876DDA282B57C00800CA3D9B /* RxMoya */,
 				876DDA562B57E37B00CA3D9B /* RxAppState */,
+				876DDA882B58F8C500CA3D9B /* SnapKit */,
+				876DDA8A2B58F8C500CA3D9B /* SnapKit-Dynamic */,
 			);
 			productName = KakaoLoginPractice;
 			productReference = 876DD9EA2B57B6ED00CA3D9B /* KakaoLoginPractice.app */;
@@ -439,6 +506,7 @@
 				876DDA1E2B57BF8200CA3D9B /* XCRemoteSwiftPackageReference "kakao-ios-sdk-rx" */,
 				876DDA252B57C00800CA3D9B /* XCRemoteSwiftPackageReference "Moya" */,
 				876DDA552B57E37B00CA3D9B /* XCRemoteSwiftPackageReference "RxAppState" */,
+				876DDA872B58F8C500CA3D9B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 876DD9EB2B57B6ED00CA3D9B /* Products */;
 			projectDirPath = "";
@@ -493,7 +561,6 @@
 				876DDA592B57E47300CA3D9B /* Navigation.swift in Sources */,
 				876DDA302B57DA2800CA3D9B /* RootDIContainer.swift in Sources */,
 				876DDA4B2B57DCB100CA3D9B /* HomeViewController.swift in Sources */,
-				876DD9F22B57B6ED00CA3D9B /* ViewController.swift in Sources */,
 				876DDA3B2B57DBFC00CA3D9B /* RootViewController.swift in Sources */,
 				876DDA412B57DC6700CA3D9B /* SplashViewModel.swift in Sources */,
 				876DDA602B57ED0400CA3D9B /* OAuthRepository.swift in Sources */,
@@ -503,6 +570,7 @@
 				876DDA7E2B58E81900CA3D9B /* OAuthReponse.swift in Sources */,
 				876DDA532B57DF8A00CA3D9B /* AuthenticationDelegate.swift in Sources */,
 				876DDA3D2B57DC4B00CA3D9B /* SplashDIContainer.swift in Sources */,
+				876DDA832B58F0C100CA3D9B /* AppleAuth.swift in Sources */,
 				876DDA652B58054D00CA3D9B /* ServiceRouter.swift in Sources */,
 				876DDA7A2B584AC000CA3D9B /* RefreshAuthenticationRouter.swift in Sources */,
 				876DDA472B57DC9900CA3D9B /* LoginViewModel.swift in Sources */,
@@ -513,7 +581,6 @@
 				876DDA332B57DA7500CA3D9B /* AuthenticationRepository.swift in Sources */,
 				876DDA352B57DAB200CA3D9B /* RootViewModel.swift in Sources */,
 				876DDA6F2B581F2C00CA3D9B /* LoginResponseDTO.swift in Sources */,
-				876DD9F02B57B6ED00CA3D9B /* SceneDelegate.swift in Sources */,
 				876DDA722B58235600CA3D9B /* NetworkService.swift in Sources */,
 				876DDA372B57DB5C00CA3D9B /* TokenStorage.swift in Sources */,
 				876DDA3F2B57DC5D00CA3D9B /* SplashViewController.swift in Sources */,
@@ -895,6 +962,14 @@
 				minimumVersion = 1.7.2;
 			};
 		};
+		876DDA872B58F8C500CA3D9B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -927,6 +1002,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 876DDA552B57E37B00CA3D9B /* XCRemoteSwiftPackageReference "RxAppState" */;
 			productName = RxAppState;
+		};
+		876DDA882B58F8C500CA3D9B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 876DDA872B58F8C500CA3D9B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		876DDA8A2B58F8C500CA3D9B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 876DDA872B58F8C500CA3D9B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -35,7 +35,21 @@ struct KakaoAuth: OAuth {
                         }
                     }
                     .disposed(by: self.disposeBag)
+            } else {
+                UserApi.shared.rx.loginWithKakaoAccount()
+                    .subscribe { OAuthToken in
+                        switch OAuthToken {
+                        case .next(let providerToken):
+                            observer.onNext(.init(accessToken: providerToken.accessToken, provider: .kakao))
+                        case .error:
+                            observer.onError(KakaoAuthError.invalidToken)
+                        case .completed:
+                            print("It's completed")
+                        }
+                    }
+                    .disposed(by: self.disposeBag)
             }
+            return Disposables.create()
         }
     }
 }

@@ -38,7 +38,8 @@ final class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        self.view.backgroundColor = .brown
+        self.bind()
     }
 
     private func bind() {

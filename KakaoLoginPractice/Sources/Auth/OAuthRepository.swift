@@ -12,13 +12,12 @@ final class OAuthRepository {
     
     func authorize(provider: Provider) -> Observable<OAuthResponse> {
         var OAuth: OAuth
-
+        
         switch provider {
         case .kakao:
             OAuth = KakaoAuth()
         case .apple:
-//            response = AppleAuth()
-            print("It's Apple")
+            OAuth = AppleAuth()
         }
         return OAuth.authorize()
     }

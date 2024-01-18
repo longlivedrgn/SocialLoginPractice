@@ -14,6 +14,7 @@ extension UIViewController {
 }
 
 extension UIViewController {
+
     func navigate(_ viewController: UIViewController, action: NavigationAction) {
         switch action {
         case .present(let animated):
@@ -37,5 +38,4 @@ extension UIViewController {
             }
         }
     }
-
 }
