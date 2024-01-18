@@ -9,7 +9,7 @@ import Foundation
 
 struct Token {
 
-    let accessToken: String
-    let refreshToken: String
+    let accessToken: String?
+    let refreshToken: String?
 
 }

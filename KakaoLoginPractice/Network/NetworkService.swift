@@ -9,6 +9,7 @@ import Foundation
 import RxSwift
 import RxMoya
 import Moya
+import UIKit
 
 final class NetworkService {
 
@@ -29,13 +30,20 @@ final class NetworkService {
                     return self.refreshAuthentication()
                         .do { loginResponseDTO in
                             // DTO에서 뽑아낸 accessToken과 refreshToken을 AuthenticationRepository의 keychain에 저장하기
-                            print(loginResponseDTO)
+                            let token = Token(accessToken: loginResponseDTO.accessToken, refreshToken: loginResponseDTO.refreshToken)
+                            self.authenticationRepository?.write(token: token)
                         }
                         .flatMap { _ in return self._request(router) }
                         .catch { [weak self] error in
                             // error가 발생했으면 refresh까지 만료가 된 것이다.
                             // 그래서 로그아웃을 시켜버리고 RootView로 옮긴다!..
-                            print(self?.authenticationRepository)
+                            // 토큰 정보를 없애버리기
+                            self?.authenticationRepository?.remove(.accessToken)
+                            self?.authenticationRepository?.remove(.refreshToken)
+                            
+                            // rootView로 다시 되돌아가기!..
+                            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+                            appDelegate?.window?.rootViewController = RootDIContainer().createRootViewController()
                             return .empty()
                         }
                 default:
@@ -57,9 +65,9 @@ final class NetworkService {
         // refresh API 호출!..
         // 먼저 KeyChain으로 refreshToken 가져오기!..
         // 만약 refreshToken이 없다면?... hasNotRefreshToken error 방출
-        let refreshToken = "refreshToken"
+        let token = self.authenticationRepository?.fetchToken()
 
-        if refreshToken == nil {
+        guard let refreshToken = token?.refreshToken else {
             return .error(NetworkError.hasNotRefreshToken)
         }
 

@@ -14,7 +14,7 @@ final class RootDIContainer {
 
     init() {
         self.rootViewModel = RootViewModel()
-        self.authenticationRepository = AuthenticationRepository(keyChain: Keychain(), networkService: NetworkService())
+        self.authenticationRepository = AuthenticationRepository(networkService: NetworkService())
     }
 
     func createRootViewController() -> RootViewController {
