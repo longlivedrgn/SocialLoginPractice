@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import Moya
+import UIKit
 
 class AuthenticationInterceptor: RequestInterceptor {
 
@@ -31,22 +32,24 @@ class AuthenticationInterceptor: RequestInterceptor {
     }
 
     func retry(_ request: Request, for session: Session, dueTo error: Error, completion: @escaping (RetryResult) -> Void) {
+        // MARK: 🚨🚨 추가적인 Error Handling을 해야됨!.
+
         // HTTPResponse가 아닐 경우 에러 핸들링
         guard let response = request.task?.response as? HTTPURLResponse else {
-            completion(.doNotRetryWithError(error))
+            completion(.doNotRetryWithError(NetworkError.request))
             return
         }
 
         // 상태 코드가 401이 아닐 경우에는 Retry를 하지 않는다.
         guard response.statusCode == 401 else {
-            completion(.doNotRetryWithError(error))
+            completion(.doNotRetryWithError(NetworkError.request))
             return
         }
 
         // 1. 서버에게 refresh token을 활용하여 다시 access token과 refresh token을 받아오기
         // 2. 받아온 토큰으로 다시 access token을 설정해서 retry를 시키기!..
         guard let refreshToken = TokenStorage.shared.read(.refreshToken) else {
-            completion(.doNotRetryWithError(error))
+            completion(.doNotRetryWithError(NetworkError.hasNotRefreshToken))
             return
         }
 
@@ -64,8 +67,16 @@ class AuthenticationInterceptor: RequestInterceptor {
                 TokenStorage.shared.write(.refreshToken, value: refreshToken)
                 completion(.retry)
             case .failure(let error):
-                completion(.doNotRetryWithError(error))
-                // 로그인 화면으로 가야된다.
+                // 로그인 화면으로 가야된다. -> refresh Token도 문제가 생긴 것이다. 그러면 login VC로 가자!
+                TokenStorage.shared.delete(.accessToken)
+                TokenStorage.shared.delete(.refreshToken)
+
+                DispatchQueue.main.async {
+                    let appDelegate = UIApplication.shared.delegate as? AppDelegate
+                    appDelegate?.window?.rootViewController = RootDIContainer().createRootViewController()
+                }
+
+                completion(.doNotRetry)
             }
         }
     }

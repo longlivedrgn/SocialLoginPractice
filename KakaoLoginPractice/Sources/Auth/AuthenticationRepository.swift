@@ -16,7 +16,6 @@ final class AuthenticationRepository {
     }
 
     private let networkService: NetworkService
-    // Network 객체
 
     init(networkService: NetworkService) {
         self.networkService = networkService

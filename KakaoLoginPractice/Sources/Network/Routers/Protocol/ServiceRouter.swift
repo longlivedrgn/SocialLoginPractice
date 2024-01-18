@@ -21,4 +21,7 @@ extension ServiceRouter {
     }
     var baseURL: URL { URL(string: "http://app/papi/v1/")! }
     var sampleData: Data { Data() }
+    var validationType: ValidationType {
+        return .successCodes
+    }
 }

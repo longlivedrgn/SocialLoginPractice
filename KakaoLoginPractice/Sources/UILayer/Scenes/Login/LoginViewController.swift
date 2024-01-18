@@ -9,6 +9,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 import SnapKit
+import Moya
+import RxMoya
 
 final class LoginViewController: UIViewController {
 
@@ -30,8 +32,8 @@ final class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.bind()
         self.configureViews()
+        self.bind()
     }
 
     private func bind() {
@@ -40,7 +42,6 @@ final class LoginViewController: UIViewController {
             self.signInAppleButton.rx.tap.map { .apple }
         )
         .subscribe(onNext: { [weak self] provider in
-            print("it's tapped!..")
             self?.viewModel?.signIn(with: provider)
         })
         .disposed(by: disposeBag)
@@ -49,13 +50,12 @@ final class LoginViewController: UIViewController {
     private func configureViews() {
         self.view.backgroundColor = .red
 
-        self.view.addSubview(signInKakaoButton)
-        self.view.addSubview(signInAppleButton)
+        self.view.addSubview(self.signInKakaoButton)
+        self.view.addSubview(self.signInAppleButton)
 
         self.signInKakaoButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
-
         }
 
         self.signInAppleButton.snp.makeConstraints { make in
@@ -63,5 +63,4 @@ final class LoginViewController: UIViewController {
             make.centerX.equalToSuperview()
         }
     }
-
 }

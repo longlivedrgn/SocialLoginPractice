@@ -11,6 +11,7 @@ import RxKakaoSDKAuth
 import KakaoSDKAuth
 import KakaoSDKUser
 import RxKakaoSDKUser
+import UIKit
 
 struct KakaoAuth: OAuth {
 
