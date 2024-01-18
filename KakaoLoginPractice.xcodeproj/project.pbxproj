@@ -46,7 +46,7 @@
 		876DDA6F2B581F2C00CA3D9B /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA6E2B581F2C00CA3D9B /* LoginResponseDTO.swift */; };
 		876DDA722B58235600CA3D9B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA712B58235600CA3D9B /* NetworkService.swift */; };
 		876DDA742B5823F200CA3D9B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA732B5823F200CA3D9B /* NetworkError.swift */; };
-		876DDA782B583CA800CA3D9B /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA772B583CA800CA3D9B /* ServerResponse.swift */; };
+		876DDA782B583CA800CA3D9B /* ServerResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA772B583CA800CA3D9B /* ServerResponseDTO.swift */; };
 		876DDA7A2B584AC000CA3D9B /* RefreshAuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA792B584AC000CA3D9B /* RefreshAuthenticationRouter.swift */; };
 		876DDA7C2B58E76B00CA3D9B /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA7B2B58E76B00CA3D9B /* KakaoAuth.swift */; };
 		876DDA7E2B58E81900CA3D9B /* OAuthReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA7D2B58E81900CA3D9B /* OAuthReponse.swift */; };
@@ -54,6 +54,8 @@
 		876DDA832B58F0C100CA3D9B /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA822B58F0C100CA3D9B /* AppleAuth.swift */; };
 		876DDA892B58F8C500CA3D9B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA882B58F8C500CA3D9B /* SnapKit */; };
 		876DDA8B2B58F8C500CA3D9B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA8A2B58F8C500CA3D9B /* SnapKit-Dynamic */; };
+		876DDA962B594FD600CA3D9B /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA952B594FD600CA3D9B /* AuthenticationInterceptor.swift */; };
+		876DDA982B59568900CA3D9B /* MoyaProvider+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA972B59568900CA3D9B /* MoyaProvider+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,12 +114,14 @@
 		876DDA6E2B581F2C00CA3D9B /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
 		876DDA712B58235600CA3D9B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		876DDA732B5823F200CA3D9B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		876DDA772B583CA800CA3D9B /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		876DDA772B583CA800CA3D9B /* ServerResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponseDTO.swift; sourceTree = "<group>"; };
 		876DDA792B584AC000CA3D9B /* RefreshAuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshAuthenticationRouter.swift; sourceTree = "<group>"; };
 		876DDA7B2B58E76B00CA3D9B /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
 		876DDA7D2B58E81900CA3D9B /* OAuthReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthReponse.swift; sourceTree = "<group>"; };
 		876DDA802B58ECD000CA3D9B /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		876DDA822B58F0C100CA3D9B /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
+		876DDA952B594FD600CA3D9B /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		876DDA972B59568900CA3D9B /* MoyaProvider+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,11 +255,13 @@
 				876DDA362B57DB5C00CA3D9B /* TokenStorage.swift */,
 				876DDA4E2B57DD5D00CA3D9B /* Token.swift */,
 				876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */,
+				876DDA952B594FD600CA3D9B /* AuthenticationInterceptor.swift */,
 				876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */,
 				876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */,
 				876DDA7B2B58E76B00CA3D9B /* KakaoAuth.swift */,
 				876DDA7D2B58E81900CA3D9B /* OAuthReponse.swift */,
 				876DDA822B58F0C100CA3D9B /* AppleAuth.swift */,
+				876DDA972B59568900CA3D9B /* MoyaProvider+.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -285,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				876DDA682B581E2F00CA3D9B /* Auth */,
-				876DDA772B583CA800CA3D9B /* ServerResponse.swift */,
+				876DDA772B583CA800CA3D9B /* ServerResponseDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				876DDA432B57DC8A00CA3D9B /* LoginDIContainer.swift in Sources */,
 				876DDA592B57E47300CA3D9B /* Navigation.swift in Sources */,
 				876DDA302B57DA2800CA3D9B /* RootDIContainer.swift in Sources */,
+				876DDA962B594FD600CA3D9B /* AuthenticationInterceptor.swift in Sources */,
 				876DDA4B2B57DCB100CA3D9B /* HomeViewController.swift in Sources */,
 				876DDA3B2B57DBFC00CA3D9B /* RootViewController.swift in Sources */,
 				876DDA412B57DC6700CA3D9B /* SplashViewModel.swift in Sources */,
@@ -574,7 +581,7 @@
 				876DDA652B58054D00CA3D9B /* ServiceRouter.swift in Sources */,
 				876DDA7A2B584AC000CA3D9B /* RefreshAuthenticationRouter.swift in Sources */,
 				876DDA472B57DC9900CA3D9B /* LoginViewModel.swift in Sources */,
-				876DDA782B583CA800CA3D9B /* ServerResponse.swift in Sources */,
+				876DDA782B583CA800CA3D9B /* ServerResponseDTO.swift in Sources */,
 				876DDA632B58053C00CA3D9B /* LoginRouter.swift in Sources */,
 				876DDA492B57DCA500CA3D9B /* HomeDIContainer.swift in Sources */,
 				876DD9EE2B57B6ED00CA3D9B /* AppDelegate.swift in Sources */,
@@ -584,6 +591,7 @@
 				876DDA722B58235600CA3D9B /* NetworkService.swift in Sources */,
 				876DDA372B57DB5C00CA3D9B /* TokenStorage.swift in Sources */,
 				876DDA3F2B57DC5D00CA3D9B /* SplashViewController.swift in Sources */,
+				876DDA982B59568900CA3D9B /* MoyaProvider+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

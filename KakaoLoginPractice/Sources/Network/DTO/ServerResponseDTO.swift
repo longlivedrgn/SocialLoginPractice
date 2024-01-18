@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ServerResponse<T: Decodable>: Decodable {
+struct ServerResponseDTO<T: Decodable>: Decodable {
 
     let statusCode: Int?
     let data: T?

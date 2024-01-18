@@ -13,5 +13,7 @@ enum NetworkError: Error, Equatable {
     case accessTokenInvalidate
     case denyAuthentication
     case unknown(_ code: Int, _ message: String?)
+    case request
+    case decoding
 }
 
