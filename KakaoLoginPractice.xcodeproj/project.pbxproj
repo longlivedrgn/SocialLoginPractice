@@ -20,7 +20,7 @@
 		876DDA272B57C00800CA3D9B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA262B57C00800CA3D9B /* Moya */; };
 		876DDA292B57C00800CA3D9B /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 876DDA282B57C00800CA3D9B /* RxMoya */; };
 		876DDA302B57DA2800CA3D9B /* RootDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA2F2B57DA2800CA3D9B /* RootDIContainer.swift */; };
-		876DDA332B57DA7500CA3D9B /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */; };
+		876DDA332B57DA7500CA3D9B /* BoolTiAuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA322B57DA7500CA3D9B /* BoolTiAuthenticationRepository.swift */; };
 		876DDA352B57DAB200CA3D9B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA342B57DAB200CA3D9B /* RootViewModel.swift */; };
 		876DDA372B57DB5C00CA3D9B /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA362B57DB5C00CA3D9B /* TokenStorage.swift */; };
 		876DDA3B2B57DBFC00CA3D9B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876DDA3A2B57DBFC00CA3D9B /* RootViewController.swift */; };
@@ -91,7 +91,7 @@
 		876DDA102B57B6EF00CA3D9B /* KakaoLoginPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		876DDA2A2B57C0D500CA3D9B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		876DDA2F2B57DA2800CA3D9B /* RootDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDIContainer.swift; sourceTree = "<group>"; };
-		876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		876DDA322B57DA7500CA3D9B /* BoolTiAuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTiAuthenticationRepository.swift; sourceTree = "<group>"; };
 		876DDA342B57DAB200CA3D9B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		876DDA362B57DB5C00CA3D9B /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		876DDA3A2B57DBFC00CA3D9B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 				876DDA7F2B58ECC700CA3D9B /* Protocol */,
 				876DDA362B57DB5C00CA3D9B /* TokenStorage.swift */,
 				876DDA4E2B57DD5D00CA3D9B /* Token.swift */,
-				876DDA322B57DA7500CA3D9B /* AuthenticationRepository.swift */,
+				876DDA322B57DA7500CA3D9B /* BoolTiAuthenticationRepository.swift */,
 				876DDA952B594FD600CA3D9B /* AuthenticationInterceptor.swift */,
 				876DDA522B57DF8A00CA3D9B /* AuthenticationDelegate.swift */,
 				876DDA5F2B57ED0400CA3D9B /* OAuthRepository.swift */,
@@ -593,7 +593,7 @@
 				876DDA632B58053C00CA3D9B /* LoginRouter.swift in Sources */,
 				876DDA492B57DCA500CA3D9B /* HomeDIContainer.swift in Sources */,
 				876DD9EE2B57B6ED00CA3D9B /* AppDelegate.swift in Sources */,
-				876DDA332B57DA7500CA3D9B /* AuthenticationRepository.swift in Sources */,
+				876DDA332B57DA7500CA3D9B /* BoolTiAuthenticationRepository.swift in Sources */,
 				876DDA352B57DAB200CA3D9B /* RootViewModel.swift in Sources */,
 				876DDA6F2B581F2C00CA3D9B /* LoginResponseDTO.swift in Sources */,
 				876DDA722B58235600CA3D9B /* NetworkService.swift in Sources */,

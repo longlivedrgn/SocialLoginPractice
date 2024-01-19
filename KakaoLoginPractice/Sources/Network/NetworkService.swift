@@ -11,12 +11,13 @@ import RxMoya
 import Moya
 import UIKit
 
-final class NetworkService {
+protocol NetworkServing {
+    func request<Router: ServiceRouter>(_ router: Router) -> Observable<Router.Response>
+}
 
-    private var token: Token?
+final class NetworkService: NetworkServing {
+
     private let provider = MoyaProvider<MultiTarget>(session: Session(interceptor: AuthenticationInterceptor()))
-    private weak var authenticationRepository: AuthenticationRepository?
-
     private let disposeBag = DisposeBag()
 
     func request<Router: ServiceRouter>(_ router: Router) -> Observable<Router.Response> {

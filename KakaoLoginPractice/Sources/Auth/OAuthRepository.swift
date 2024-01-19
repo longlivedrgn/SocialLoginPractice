@@ -8,8 +8,12 @@
 import Foundation
 import RxSwift
 
-final class OAuthRepository {
-    
+protocol OAuthRepository {
+    func authorize(provider: Provider) -> Observable<OAuthResponse>
+}
+
+final class BooltiOAuthRepository: OAuthRepository {
+
     func authorize(provider: Provider) -> Observable<OAuthResponse> {
         var OAuth: OAuth
         

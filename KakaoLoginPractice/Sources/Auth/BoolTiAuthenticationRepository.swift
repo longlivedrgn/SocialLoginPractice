@@ -8,16 +8,24 @@
 import Foundation
 import RxSwift
 
-final class AuthenticationRepository {
+enum AuthenticationOption {
+    case accessToken
+    case refreshToken
+}
 
-    enum AuthenticationOption {
-        case accessToken
-        case refreshToken
-    }
+protocol AuthenticationRepository {
 
-    private let networkService: NetworkService
+    var networkService: NetworkServing { get }
+    func fetchToken() -> Token
+    func fetch(withProviderToken providerToken: String, provider: Provider) -> Observable<LoginResponseDTO>
+    func write(token: Token)
+    func remove(_ option: AuthenticationOption)
+}
 
-    init(networkService: NetworkService) {
+final class BoolTiAuthenticationRepository: AuthenticationRepository {
+    let networkService: NetworkServing
+
+    init(networkService: NetworkServing) {
         self.networkService = networkService
     }
 

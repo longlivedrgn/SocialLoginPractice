@@ -20,7 +20,6 @@ struct CurrentWeatherDTO: Decodable {
 
 }
 
-
 struct TemperatureDTO: Decodable {
 
     let averageTemperature, minimumTemperature, maximumTemperature: Double
